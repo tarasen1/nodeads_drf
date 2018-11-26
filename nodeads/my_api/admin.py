@@ -54,14 +54,3 @@ class ElementAdmin(admin.ModelAdmin):
 
 admin.site.register(Group, GroupAdmin)
 admin.site.register(Element, ElementAdmin)
-
-#
-# from django.contrib import admin
-# from adminfilters.models import Species, Breed
-#
-
-#
-# @admin.register(Breed)
-# class BreedAdmin(admin.ModelAdmin):
-#     list_display = ('name', 'species', )
-#     list_filter = (SpeciesListFilter, )

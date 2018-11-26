@@ -21,7 +21,6 @@ class GroupSerializer(serializers.ModelSerializer):
 
 
 class ElementSerializer(serializers.ModelSerializer):
-    #parent_group = GroupSerializer(read_only=True)
     class Meta:
         model = Element
         fields = ('name', 'dscr', 'image', 'parent_group')
